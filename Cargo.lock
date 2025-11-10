@@ -2501,7 +2501,8 @@ dependencies = [
  "solana-sdk",
  "solana-security-txt",
  "spl-associated-token-account",
- "spl-token 7.0.0",
+ "spl-token 6.0.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-v6.0.0)",
+ "spl-token-2022 4.0.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
  "static_assertions",
  "thiserror 1.0.69",
  "tokio",
@@ -6082,46 +6083,74 @@ dependencies = [
 [[package]]
 name = "spl-associated-token-account"
 version = "4.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "68034596cf4804880d265f834af1ff2f821ad5293e41fa0f8f59086c181fc38e"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "assert_matches",
  "borsh 1.5.5",
  "num-derive 0.4.2",
  "num-traits",
  "solana-program 2.3.0",
- "spl-token 6.0.0",
- "spl-token-2022",
+ "spl-token 6.0.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-token-2022 4.0.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
  "thiserror 1.0.69",
 ]
 
 [[package]]
 name = "spl-discriminator"
 version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a38ea8b6dedb7065887f12d62ed62c1743aa70749e8558f963609793f6fb12bc"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "bytemuck",
  "solana-program 2.3.0",
- "spl-discriminator-derive",
+ "spl-discriminator-derive 0.2.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+]
+
+[[package]]
+name = "spl-discriminator"
+version = "0.3.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
+dependencies = [
+ "bytemuck",
+ "solana-program 2.3.0",
+ "spl-discriminator-derive 0.2.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
 ]
 
 [[package]]
 name = "spl-discriminator-derive"
 version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d9e8418ea6269dcfb01c712f0444d2c75542c04448b480e87de59d2865edc750"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "quote",
- "spl-discriminator-syn",
+ "spl-discriminator-syn 0.2.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "syn 2.0.105",
+]
+
+[[package]]
+name = "spl-discriminator-derive"
+version = "0.2.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
+dependencies = [
+ "quote",
+ "spl-discriminator-syn 0.2.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
  "syn 2.0.105",
 ]
 
 [[package]]
 name = "spl-discriminator-syn"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5d1dbc82ab91422345b6df40a79e2b78c7bce1ebb366da323572dd60b7076b67"
+version = "0.2.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "sha2 0.10.9",
+ "syn 2.0.105",
+ "thiserror 1.0.69",
+]
+
+[[package]]
+name = "spl-discriminator-syn"
+version = "0.2.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -6143,44 +6172,84 @@ dependencies = [
 [[package]]
 name = "spl-memo"
 version = "5.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a0dba2f2bb6419523405d21c301a32c9f9568354d4742552e7972af801f4bdb3"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
+dependencies = [
+ "solana-program 2.3.0",
+]
+
+[[package]]
+name = "spl-memo"
+version = "5.0.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
 dependencies = [
  "solana-program 2.3.0",
 ]
 
 [[package]]
 name = "spl-pod"
-version = "0.3.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c704c88fc457fa649ba3aabe195c79d885c3f26709efaddc453c8de352c90b87"
+version = "0.3.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "borsh 1.5.5",
  "bytemuck",
  "bytemuck_derive",
  "solana-program 2.3.0",
  "solana-zk-token-sdk",
- "spl-program-error",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+]
+
+[[package]]
+name = "spl-pod"
+version = "0.3.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
+dependencies = [
+ "borsh 1.5.5",
+ "bytemuck",
+ "bytemuck_derive",
+ "solana-program 2.3.0",
+ "solana-zk-token-sdk",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
 ]
 
 [[package]]
 name = "spl-program-error"
 version = "0.5.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d7b28bed65356558133751cc32b48a7a5ddfc59ac4e941314630bbed1ac10532"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "num-derive 0.4.2",
  "num-traits",
  "solana-program 2.3.0",
- "spl-program-error-derive",
+ "spl-program-error-derive 0.4.1 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "thiserror 1.0.69",
+]
+
+[[package]]
+name = "spl-program-error"
+version = "0.5.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
+dependencies = [
+ "num-derive 0.4.2",
+ "num-traits",
+ "solana-program 2.3.0",
+ "spl-program-error-derive 0.4.1 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
  "thiserror 1.0.69",
 ]
 
 [[package]]
 name = "spl-program-error-derive"
 version = "0.4.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e6d375dd76c517836353e093c2dbb490938ff72821ab568b545fd30ab3256b3e"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "sha2 0.10.9",
+ "syn 2.0.105",
+]
+
+[[package]]
+name = "spl-program-error-derive"
+version = "0.4.1"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -6191,22 +6260,33 @@ dependencies = [
 [[package]]
 name = "spl-tlv-account-resolution"
 version = "0.7.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "37a75a5f0fcc58126693ed78a17042e9dc53f07e357d6be91789f7d62aff61a4"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "bytemuck",
  "solana-program 2.3.0",
- "spl-discriminator",
- "spl-pod",
- "spl-program-error",
- "spl-type-length-value",
+ "spl-discriminator 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-type-length-value 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+]
+
+[[package]]
+name = "spl-tlv-account-resolution"
+version = "0.7.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
+dependencies = [
+ "bytemuck",
+ "solana-program 2.3.0",
+ "spl-discriminator 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-type-length-value 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
 ]
 
 [[package]]
 name = "spl-token"
 version = "6.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "70a0f06ac7f23dc0984931b1fe309468f14ea58e32660439c1cef19456f5d0e3"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "arrayref",
  "bytemuck",
@@ -6219,9 +6299,22 @@ dependencies = [
 
 [[package]]
 name = "spl-token"
-version = "7.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ed320a6c934128d4f7e54fe00e16b8aeaecf215799d060ae14f93378da6dc834"
+version = "6.0.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
+dependencies = [
+ "arrayref",
+ "bytemuck",
+ "num-derive 0.4.2",
+ "num-traits",
+ "num_enum 0.7.4",
+ "solana-program 2.3.0",
+ "thiserror 1.0.69",
+]
+
+[[package]]
+name = "spl-token"
+version = "6.0.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-v6.0.0#64d7967321524118bd86d25c49561f1e39251a66"
 dependencies = [
  "arrayref",
  "bytemuck",
@@ -6234,9 +6327,8 @@ dependencies = [
 
 [[package]]
 name = "spl-token-2022"
-version = "4.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "33afcf7a47274725990c783a6e86330883cae26655ad6e2d910f765e530d2cef"
+version = "4.0.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "arrayref",
  "bytemuck",
@@ -6246,70 +6338,141 @@ dependencies = [
  "solana-program 2.3.0",
  "solana-security-txt",
  "solana-zk-token-sdk",
- "spl-memo",
- "spl-pod",
- "spl-token 6.0.0",
- "spl-token-group-interface",
- "spl-token-metadata-interface",
- "spl-transfer-hook-interface",
- "spl-type-length-value",
+ "spl-memo 5.0.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-token 6.0.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-token-group-interface 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-token-metadata-interface 0.4.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-transfer-hook-interface 0.7.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-type-length-value 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "thiserror 1.0.69",
+]
+
+[[package]]
+name = "spl-token-2022"
+version = "4.0.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
+dependencies = [
+ "arrayref",
+ "bytemuck",
+ "num-derive 0.4.2",
+ "num-traits",
+ "num_enum 0.7.4",
+ "solana-program 2.3.0",
+ "solana-security-txt",
+ "solana-zk-token-sdk",
+ "spl-memo 5.0.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-token 6.0.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-token-group-interface 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-token-metadata-interface 0.4.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-transfer-hook-interface 0.7.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-type-length-value 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
  "thiserror 1.0.69",
 ]
 
 [[package]]
 name = "spl-token-group-interface"
 version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "df8752b85a5ecc1d9f3a43bce3dd9a6a053673aacf5deb513d1cbb88d3534ffd"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "bytemuck",
  "solana-program 2.3.0",
- "spl-discriminator",
- "spl-pod",
- "spl-program-error",
+ "spl-discriminator 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+]
+
+[[package]]
+name = "spl-token-group-interface"
+version = "0.3.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
+dependencies = [
+ "bytemuck",
+ "solana-program 2.3.0",
+ "spl-discriminator 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
 ]
 
 [[package]]
 name = "spl-token-metadata-interface"
 version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c6c2318ddff97e006ed9b1291ebec0750a78547f870f62a69c56fe3b46a5d8fc"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "borsh 1.5.5",
  "solana-program 2.3.0",
- "spl-discriminator",
- "spl-pod",
- "spl-program-error",
- "spl-type-length-value",
+ "spl-discriminator 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-type-length-value 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+]
+
+[[package]]
+name = "spl-token-metadata-interface"
+version = "0.4.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
+dependencies = [
+ "borsh 1.5.5",
+ "solana-program 2.3.0",
+ "spl-discriminator 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-type-length-value 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
 ]
 
 [[package]]
 name = "spl-transfer-hook-interface"
 version = "0.7.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a110f33d941275d9f868b96daaa993f1e73b6806cc8836e43075b4d3ad8338a7"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "arrayref",
  "bytemuck",
  "solana-program 2.3.0",
- "spl-discriminator",
- "spl-pod",
- "spl-program-error",
- "spl-tlv-account-resolution",
- "spl-type-length-value",
+ "spl-discriminator 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-tlv-account-resolution 0.7.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-type-length-value 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+]
+
+[[package]]
+name = "spl-transfer-hook-interface"
+version = "0.7.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
+dependencies = [
+ "arrayref",
+ "bytemuck",
+ "solana-program 2.3.0",
+ "spl-discriminator 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-tlv-account-resolution 0.7.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-type-length-value 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
 ]
 
 [[package]]
 name = "spl-type-length-value"
 version = "0.5.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bdcd73ec187bc409464c60759232e309f83b52a18a9c5610bf281c9c6432918c"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0#3f356f6b5454033e2f82125922c679d8bb70e5e7"
 dependencies = [
  "bytemuck",
  "solana-program 2.3.0",
- "spl-discriminator",
- "spl-pod",
- "spl-program-error",
+ "spl-discriminator 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=associated-token-account-v4.0.0)",
+]
+
+[[package]]
+name = "spl-type-length-value"
+version = "0.5.0"
+source = "git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0#d0f48a6ba34acb01dd0fde5368e73b406c544837"
+dependencies = [
+ "bytemuck",
+ "solana-program 2.3.0",
+ "spl-discriminator 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-pod 0.3.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
+ "spl-program-error 0.5.0 (git+https://github.com/solana-labs/solana-program-library?tag=token-2022-v4.0.0)",
 ]
 
 [[package]]
