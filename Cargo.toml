@@ -1,7 +1,7 @@
 [package]
 name = "phoenix-v1"
 version = "0.2.4"
-edition = "2021"
+edition = "2018"
 resolver = "2"
 repository = "https://github.com/Ellipsis-Labs/phoenix-v1"
 authors = ["Ellipsis Labs <maintainers@ellipsislabs.xyz>"]
