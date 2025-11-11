@@ -33,7 +33,7 @@ spl-token-2022 = { git = "https://github.com/solana-labs/solana-program-library"
 solana-client = "2"
 solana-program = {version = "2"}
 borsh = "1.5.5"
-bytemuck = "1.17.0"
+bytemuck = "1.14.0"
 lib-sokoban = "=0.3.0" 
 num_enum = "0.5.7"
 itertools = "=0.10.5"
