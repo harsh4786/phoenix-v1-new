@@ -1,6 +1,5 @@
 use std::{
-    fmt::Display,
-    ops::{Div, Rem},
+    convert::TryFrom, fmt::Display, ops::{Div, Rem}
 };
 
 use solana_program::{
